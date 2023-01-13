@@ -1,0 +1,14 @@
+{
+  "main": "assets/js/index.js",
+  "scripts": {
+    "watch-css": "npx tailwindcss -i ./assets/css/style.css -o ./assets/css/main.css --watch",
+    "watch-js": "npx esbuild assets/js/index.js --outfile=assets/js/bundle.js --bundle --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
+  },
+  "dependencies": {
+    "alpinejs": "^3.9.0",
+    "esbuild": "^0.14.23"
+  }
+}
