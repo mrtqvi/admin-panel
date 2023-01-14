@@ -5,6 +5,7 @@
     "watch-js": "npx esbuild assets/js/index.js --outfile=assets/js/bundle.js --bundle --watch"
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
     "tailwindcss": "^3.0.23"
   },
   "dependencies": {

@@ -57,6 +57,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  select {
+    background-position:left theme('spacing.2') center;
+    padding-left:theme('spacing.10');
+    padding-right:theme('spacing.3');
+  }
+}
+
 .activeSidebar {
   @apply  text-blue-600 dark:text-blue-400
 }
@@ -130,6 +138,22 @@
   @apply px-6 py-[.6rem]
 }
 
+.checkbox {
+  @apply rounded p-1.5 bg-gray-300 dark:bg-gray-600 border-none
+}
+
+.checkbox-lg {
+  @apply p-2.5
+}
+
+.checkbox-pink {
+  @apply text-pink-500 checked:ring-pink-600 focus:outline-pink-400
+}
+
+.checkbox-green {
+  @apply text-green-500 checked:ring-green-600 focus:outline-green-400
+}
+
 .form-control {
-  @apply w-full outline-none p-1.5 text-gray-700 bg-gray-50 rounded border  focus:border-purple-800 dark:focus:border-purple-400 dark:bg-[#22272E] dark:border-gray-700 dark:text-gray-400 placeholder:text-sm
+  @apply w-full outline-none p-1.5 text-gray-600 bg-gray-50 rounded border border-gray-400 focus:border-purple-600 dark:focus:border-purple-400 focus:ring-0 dark:bg-[#22272E] dark:border-gray-700 dark:text-gray-400 placeholder:text-sm
 }
